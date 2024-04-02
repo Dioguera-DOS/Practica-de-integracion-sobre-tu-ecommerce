@@ -1,0 +1,22 @@
+<h2>Home Page!!!!</h2>
+<br>
+<hr>
+
+<a href="/api/chat">Chat</a>
+
+
+<script src="socket.io/socket.io.js"></script>
+<script>
+    const getAllProducts = async () => {    
+        let result = await fetch('http://localhost:3000/api/products')
+        console.log(result)
+        let dataProd = await result.json()
+        
+        
+    }
+
+    getAllProducts()
+</script>
+
+
+<br><br>

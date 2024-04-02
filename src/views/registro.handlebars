@@ -1,0 +1,21 @@
+<div id="ptop">
+
+    <h2>Registro usuarios:</h2>
+    <hr>
+
+    <form action="/api/sessions/register" method="post">
+
+        {{#if error}}
+        <div style="color: red;">{{error}}</div>
+        {{/if}}
+
+        <input type="text" name="first_name" placeholder="Enter you First Name">
+        <input type="text" name="last_name" placeholder="Last Name">
+        <input type="email" name="email" placeholder="E-mail">
+        <input type="text" name="rol" placeholder="Rol">
+        <input type="password" name="password" placeholder="Password">
+        <br>
+        <div><input type="submit" value="Registrar"></div>
+    </form>
+
+</div>
